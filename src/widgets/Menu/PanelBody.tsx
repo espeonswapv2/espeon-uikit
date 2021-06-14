@@ -43,6 +43,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               pushNav={pushNav}
               icon={iconElement}
               label={entry.label}
+              status={entry.status}
               initialOpenState={entry.initialOpenState}
               className={calloutClass}
             >
