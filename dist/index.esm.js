@@ -2330,7 +2330,8 @@ var PanelBody = function (_a) {
         return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
                 iconElement,
-                React.createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
+                React.createElement(LinkLabel, { isPushed: isPushed }, entry.label),
+                entry.status && (React.createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
     })));
 };
 var templateObject_1$B;
